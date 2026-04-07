@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const rename = async () => {
-    const oldPath = path.join(__dirname, 'files', 'wrongFilename.txt');
+    const oldPath = path.join(__dirname, 'files', 'fresh.txt');
     const newPath = path.join(__dirname, 'files', 'properFilename.md');
     
     try {

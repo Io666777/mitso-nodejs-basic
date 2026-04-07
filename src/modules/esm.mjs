@@ -11,10 +11,11 @@ const random = Math.random();
 
 let unknownObject;
 
+// Используйте assert вместо with для лучшей совместимости
 if (random > 0.5) {
-    unknownObject = await import('./files/a.json', { with: { type: 'json' } });
+    unknownObject = await import('./files/a.json', { assert: { type: 'json' } });
 } else {
-    unknownObject = await import('./files/b.json', { with: { type: 'json' } });
+    unknownObject = await import('./files/b.json', { assert: { type: 'json' } });
 }
 
 console.log(`Release ${release()}`);
@@ -29,7 +30,7 @@ const myServer = createServerHttp((_, res) => {
 
 const PORT = 3000;
 
-console.log(unknownObject);
+console.log(unknownObject.default); // Доступ к содержимому JSON
 
 myServer.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);

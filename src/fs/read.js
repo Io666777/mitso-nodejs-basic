@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const read = async () => {
-    const filePath = path.join(__dirname, 'files', 'fileToRead.txt');
+    const filePath = path.join(__dirname, 'files', 'fresh.txt');
     
     try {
         const content = await fs.readFile(filePath, 'utf8');

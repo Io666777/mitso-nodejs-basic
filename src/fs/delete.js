@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const remove = async () => {
-    const filePath = path.join(__dirname, 'files', 'fileToRemove.txt');
+    const filePath = path.join(__dirname, 'files_copy', 'fresh.txt');
     
     try {
         await fs.unlink(filePath);

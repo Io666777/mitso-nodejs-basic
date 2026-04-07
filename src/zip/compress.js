@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const compress = async () => {
-    const sourcePath = path.join(__dirname, 'files', 'fileToCompress.txt');
+    const sourcePath = path.join(__dirname, 'files', 'file.txt');
     const destPath = path.join(__dirname, 'files', 'archive.gz');
     
     const readStream = fs.createReadStream(sourcePath);
