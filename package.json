@@ -1,39 +1,23 @@
 {
-  "name": "mitso-nodejs-basics",
+  "name": "mitso-nodejs-basic",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+  "main": "tasks.js",
   "scripts": {
-    "cli:args": "node src/cli/args.js --some-arg value1 --other 1337 --arg2 42",
-    "cli:env": "npx cross-env SOME=any MITSO_foo=bar MITSO_bar=baz node src/cli/env.js",
-    "cp": "node src/cp/cp.js",
-    "fs:copy": "node src/fs/copy.js",
-    "fs:create": "node src/fs/create.js",
-    "fs:delete": "node src/fs/delete.js",
-    "fs:list": "node src/fs/list.js",
-    "fs:read": "node src/fs/read.js",
-    "fs:rename": "node src/fs/rename.js",
-    "hash": "node src/hash/calcHash.js",
-    "modules": "node src/modules/esm.mjs",
-    "streams:read": "node src/streams/read.js",
-    "streams:transform": "node src/streams/transform.js",
-    "streams:write": "node src/streams/write.js",
-    "wt": "node src/wt/main.js",
-    "zip:compress": "node src/zip/compress.js",
-    "zip:decompress": "node src/zip/decompress.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KalinkinFiz/mitso-nodejs-basic"
+    "url": "git+https://github.com/Io666777/mitso-nodejs-basic.git"
   },
-  "keywords": [
-    "nodejs",
-    "mitso"
-  ],
-  "author": "KalinkinFiz",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KalinkinFiz/mitso-nodejs-basic/issues"
+    "url": "https://github.com/Io666777/mitso-nodejs-basic/issues"
   },
-  "homepage": "https://github.com/KalinkinFiz/mitso-nodejs-basic#readme"
+  "homepage": "https://github.com/Io666777/mitso-nodejs-basic#readme",
+  "dependencies": {
+    "commander": "^14.0.3"
+  }
 }
